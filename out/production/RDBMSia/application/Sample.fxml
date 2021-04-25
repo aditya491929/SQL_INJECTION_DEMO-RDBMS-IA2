@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="908.0" style="-fx-border-color: BLACK;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <children>
+                <TextArea editable="false" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="88.0" prefWidth="882.0" text="FILE UPLOAD PORTAL">
+                    <font>
+                        <Font name="Verdana" size="41.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow choke="0.36" color="#9a9a9a" height="27.22" radius="13.11" width="27.22" />
+                    </effect>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </TextArea>
+            </children>
+        </HBox>
+    </top>
+    <right>
+        <VBox prefHeight="490.0" prefWidth="160.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <effect>
+                <Glow level="0.0" />
+            </effect>
+            <children>
+                <Button fx:id="updateB" mnemonicParsing="false" onAction="#update" style="-fx-border-color: black;" text="UPDATE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="200.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="viewBtn" mnemonicParsing="false" prefHeight="58.0" prefWidth="127.0" onAction="#view" style="-fx-border-color: black;" text="VIEW">
+                    <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </right>
+    <left>
+        <VBox prefHeight="490.0" prefWidth="395.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="27.0" prefWidth="100.0">
+                    <VBox.margin>
+                        <Insets left="280.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="fname" prefHeight="46.0" prefWidth="276.0" promptText="Enter Firstname">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </padding>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="rnum" prefHeight="46.0" prefWidth="333.0" promptText="Enter Rollno.">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="30.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="mail" prefHeight="46.0" prefWidth="333.0" promptText="Enter Email">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <HBox prefHeight="65.0" prefWidth="353.0">
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label text="DOC1 :">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textF1" editable="false" prefHeight="31.0" prefWidth="216.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="browse1" mnemonicParsing="false" onAction="#BrowseAction1" text="BROWSE">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="66.0" prefWidth="353.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label text="DOC2 :">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textF2" editable="false" prefHeight="31.0" prefWidth="216.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="browse2" mnemonicParsing="false" onAction="#BrowseAction2" text="BROWSE">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="70.0" prefWidth="353.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label text="DOC3 :">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="textF3" editable="false" prefHeight="31.0" prefWidth="216.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="browse3" accessibleRoleDescription="tF" mnemonicParsing="false" onAction="#BrowseAction3" text="BROWSE">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="lname" prefHeight="46.0" prefWidth="370.0" promptText="Enter Lastname">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="40.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </padding>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="pass" prefHeight="46.0" prefWidth="370.0" promptText="Enter Password">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="30.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </PasswordField>
+                <HBox prefHeight="33.0" prefWidth="351.0">
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                    <children>
+                        <RadioButton fx:id="comp" mnemonicParsing="false" selected="true" text="COMP">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                            <toggleGroup>
+                                <ToggleGroup fx:id="Dept" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="it" mnemonicParsing="false" text="IT" toggleGroup="$Dept">
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                        </RadioButton>
+                    </children>
+                </HBox>
+                <HBox prefHeight="28.0" prefWidth="351.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <RadioButton fx:id="mech" mnemonicParsing="false" text="MECH" toggleGroup="$Dept">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="extc" mnemonicParsing="false" text="EXTC" toggleGroup="$Dept">
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="etrx" mnemonicParsing="false" selected="true" text="ETRX" toggleGroup="$Dept">
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                        </RadioButton>
+                    </children>
+                </HBox>
+                <CheckBox fx:id="check" mnemonicParsing="false" text="CHECK ONCE AGAIN">
+                    <VBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                    </VBox.margin>
+                </CheckBox>
+                <Button fx:id="saveB" mnemonicParsing="false" onAction="#save" prefHeight="61.0" prefWidth="165.0" text="SAVE">
+                    <VBox.margin>
+                        <Insets left="80.0" top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

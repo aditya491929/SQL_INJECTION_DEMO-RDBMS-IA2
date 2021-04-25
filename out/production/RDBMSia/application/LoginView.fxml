@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginViewController">
+    <right>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="908.0" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="908.0" style="-fx-background-color: grey; -fx-border-style: dashed;">
+                    <children>
+                        <TextArea editable="false" minHeight="-Infinity" prefHeight="70.0" prefWidth="888.0" style="-fx-border-style: solid;" text="                        FILE UPLOAD PORTAL">
+                            <font>
+                                <Font name="Verdana" size="31.0" />
+                            </font>
+                            <effect>
+                                <InnerShadow />
+                            </effect>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding>
+                        </TextArea>
+                    </children>
+                </HBox>
+                <Accordion layoutX="241.0" layoutY="154.0" />
+                <HBox layoutY="132.0" prefHeight="70.0" prefWidth="340.0" style="-fx-background-color: grey; -fx-border-color: darkgrey;">
+                    <children>
+                        <Label text="LOGIN PAGE" textFill="WHITE">
+                            <font>
+                                <Font name="Verdana" size="29.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="20.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Reflection fraction="0.68" topOpacity="0.24">
+                            <input>
+                                <Lighting diffuseConstant="1.24">
+                                    <bumpInput>
+                                        <Shadow color="WHITE" height="47.82" radius="17.675" width="24.88" />
+                                    </bumpInput>
+
+                                </Lighting>
+                            </input>
+                        </Reflection>
+                    </effect>
+                </HBox>
+                <fx:define>
+                    <ToggleGroup fx:id="Switch" />
+                </fx:define>
+                <RadioButton fx:id="option1" layoutX="100.0" layoutY="252.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="137.0" text="Secure" selected="true">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="Switch" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="option2" layoutX="200.0" layoutY="252.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="137.0" text="Not Secure" toggleGroup="$Switch">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton layoutX="580.0" layoutY="252.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="137.0" text="Student" >
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <TextField fx:id="userId" layoutX="101.0" layoutY="324.0" prefHeight="40.0" prefWidth="280.0" promptText="User Id" />
+                <PasswordField fx:id="userPass" layoutX="101.0" layoutY="383.0" prefHeight="40.0" prefWidth="280.0" promptText="Password" />
+                <Ellipse layoutX="72.0" layoutY="344.0" radiusX="6.0" radiusY="6.0" stroke="BLACK" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Ellipse>
+                <Ellipse layoutX="72.0" layoutY="403.0" radiusX="6.0" radiusY="6.0" stroke="BLACK" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Ellipse>
+                <Button fx:id="adminLoginBtn" layoutX="173.0" layoutY="450.0" mnemonicParsing="false" onAction="#adminLogin" prefHeight="52.0" prefWidth="125.0" text="LOGIN">
+                    <font>
+                        <Font name="Verdana" size="27.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="studentRoll" layoutX="580.0" layoutY="324.0" prefHeight="40.0" prefWidth="280.0" promptText="Rollno." />
+                <Ellipse layoutX="547.0" layoutY="344.0" radiusX="6.0" radiusY="6.0" stroke="BLACK" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Ellipse>
+                <PasswordField fx:id="studentPass" layoutX="580.0" layoutY="383.0" prefHeight="40.0" prefWidth="280.0" promptText="Password" />
+                <Ellipse layoutX="547.0" layoutY="403.0" radiusX="6.0" radiusY="6.0" stroke="BLACK" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Ellipse>
+                <Button fx:id="studentLoginBtn" layoutX="563.0" layoutY="450.0" mnemonicParsing="false" onAction="#studentLogin" prefHeight="52.0" prefWidth="125.0" text="LOGIN">
+                    <font>
+                        <Font name="Verdana" size="27.0" />
+                    </font>
+                </Button>
+                <Separator layoutX="458.0" layoutY="232.0" orientation="VERTICAL" prefHeight="281.0" prefWidth="4.0" style="-fx-background-color: grey;" />
+                <Button fx:id="newStudentBtn" layoutX="710.0" layoutY="450.0" mnemonicParsing="false" onAction="#newStudentLogin" prefHeight="52.0" prefWidth="171.0" text="NEW STUDENT" wrapText="true">
+                    <font>
+                        <Font name="Verdana" size="19.0" />
+                    </font>
+                </Button>
+                <TextArea editable="false" layoutX="614.0" layoutY="127.0" minHeight="-Infinity" prefHeight="42.0" prefWidth="178.0" text="No. Of Records: ">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </TextArea>
+                <TextField fx:id="countF" layoutX="797.0" layoutY="127.0" prefHeight="42.0" prefWidth="89.0">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
