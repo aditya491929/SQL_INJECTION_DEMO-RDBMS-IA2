@@ -111,27 +111,7 @@ public class LoginViewController implements Initializable{
             alert.showAndWait();
             System.out.println("Incorrect password");
         }
-//        if(id.equals(Admin.getEmail()))
-//            if(pass.equals(Admin.getPassword())) {
-//                try {
-//                    Stage current = (Stage)adminLoginBtn.getScene().getWindow();
-//                    current.close();
-//                    FXMLLoader loader = new FXMLLoader(getClass().getResource("AdminView.fxml"));
-//                    Parent root = loader.load();
-//                    Scene scene = new Scene(root,908,600);
-//                    Stage primaryStage = new Stage();
-//                    primaryStage.setTitle("Admin");
-//                    primaryStage.setScene(scene);
-//                    primaryStage.show();
-//                } catch(Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            else {
-//                System.out.println("Incorrect password");
-//            }
-//        else
-//            System.out.println("Incorrect username");
+
 
     }
 

@@ -123,7 +123,7 @@ public class AdminViewController implements Initializable{
         alert.setTitle("Logging Out");
         alert.setHeaderText("Admin has been logged out!");
         alert.showAndWait();
-//        mediaplayer.stop();
+
     }
 
     public void searchAndDownload()
