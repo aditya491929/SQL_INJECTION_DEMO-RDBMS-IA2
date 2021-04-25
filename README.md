@@ -4,7 +4,7 @@
 ##### Batch: B2 #####
 
 # ABSTRACT #
-The project is a javafx application where in there are two login fields to counter sql injection attack the use of prepared statements has been done, for demo purpose the Admin 
+The project is a javafx application (with MySql as backend) where in there are two login fields to counter sql injection attack the use of prepared statements has been done, for demo purpose the Admin.
 login field has a radio button that enables and disables use of prepared statements to demonstrate how sql injection attacks work.
 ![Capture2](https://user-images.githubusercontent.com/69159108/115992618-367da180-a5ec-11eb-85fa-03a29a0c6920.PNG)
 
@@ -25,3 +25,4 @@ javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED
 ```
 * Start Xampp server
 * Set application.Main as Main Java file
+* Run code
