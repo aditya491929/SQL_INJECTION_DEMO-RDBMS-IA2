@@ -9,8 +9,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.control.Alert.AlertType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -71,23 +69,13 @@ public class AdminViewController implements Initializable{
     @FXML
     private TableColumn<Student,String> f3;
 
-//    String currentDir = System.getProperty("user.dir");
-//    String musicPath = currentDir+"\\src\\application\\Scam1992.mp3";
 
     ObservableList<Student> list = FXCollections.observableArrayList();
 
-//    Media musicF = new Media(new File(musicPath).toURI().toString());
-//    MediaPlayer mediaplayer = new MediaPlayer(musicF);
 
     @Override
     public void initialize(URL url,ResourceBundle rb)
     {
-        //System.out.println("INITIALISING");
-//        mediaplayer.play();
-//        mediaplayer.setVolume(0.1);
-//        mediaplayer.setStartTime(Duration.seconds(8));
-//        mediaplayer.setCycleCount(MediaPlayer.INDEFINITE);
-//        mediaplayer.play();
 
         list = Datasource.queryStudents(1);
 
