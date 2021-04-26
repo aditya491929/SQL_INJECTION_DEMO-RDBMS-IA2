@@ -17,7 +17,7 @@ login field has a radio button that enables and disables use of prepared stateme
 ![Capture1](https://user-images.githubusercontent.com/69159108/115992330-c6225080-a5ea-11eb-88ad-66dacb9e504b.PNG)
 ``` bash
 --module-path
-D:\javafx-sdk-15.0.1\lib
+<javafx sdk lib path>
 --add-modules
 javafx.controls,javafx.fxml,javafx.media
 --add-exports
