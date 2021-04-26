@@ -2,6 +2,7 @@
 #####  Name: Aditya Malwade #####
 ##### RollNo: 1911091 #####
 ##### Batch: B2 #####
+##### IEEE PAPER LINK: https://drive.google.com/file/d/1_HxxkEvBCnFsJDjb2kLvE0ihgrZWMJ45/view?usp=sharing #####
 
 # ABSTRACT #
 The project is a javafx application (with MySql as backend) where in there are two login fields to counter sql injection attack the use of prepared statements has been done, for demo purpose the Admin.
